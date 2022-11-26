@@ -14,22 +14,26 @@ import java.util.Random;
 
 public class Pregunta1 extends AppCompatActivity {
     ArrayList<Integer> valores = new ArrayList<>();
+    int cont;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pregunta1);
         valores = getIntent().getIntegerArrayListExtra("valores");
+        cont = getIntent().getExtras().getInt("cont");
+
     }
 
     public void derrota(View v){
         Intent i = new Intent(this, Derrota.class);
+        i.putExtra("cont",cont);
         startActivity(i);
         finish();
     }
 
     public void correcto(View v){
-
+        cont += 1;
         valores.remove((Integer) 1); //Se saca la pregunta 1 de la lista de preguntas disponibles
 
         Class activity = null;
@@ -55,6 +59,7 @@ public class Pregunta1 extends AppCompatActivity {
 
             Intent intent = new Intent(getBaseContext(), activity);
             intent.putIntegerArrayListExtra("valores", valores);
+            intent.putExtra("cont",cont);
             startActivity(intent);
             finish();
         }

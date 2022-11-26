@@ -28,7 +28,8 @@ public class MainActivity extends AppCompatActivity {
 
         Random rand = new Random();
         int n = rand.nextInt(3)+ 1; //por ahora solo habrán 3 preguntas
-        Toast.makeText(this, String.valueOf(n), Toast.LENGTH_SHORT).show();
+
+        int cont = 0; //Para saber cuantas preguntas ha contestado correctamente
 
         btnEmpezar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,18 +40,21 @@ public class MainActivity extends AppCompatActivity {
             if (n == 1){
                     Intent i = new Intent(MainActivity.this, Pregunta1.class);
                     i.putIntegerArrayListExtra("valores", valores);
+                    i.putExtra("cont",cont);
                     startActivity(i);
                     finish();
                 }
                 else if (n == 2){
                     Intent i = new Intent(MainActivity.this, Pregunta2.class);
                     i.putIntegerArrayListExtra("valores", valores);
+                    i.putExtra("cont",cont);
                     startActivity(i);
                     finish();
                 }
                 else if (n ==3) {
                     Intent i = new Intent(MainActivity.this, Pregunta3.class);
                     i.putIntegerArrayListExtra("valores", valores);
+                    i.putExtra("cont",cont);
                     startActivity(i);
                     finish();
                 }
