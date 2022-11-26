@@ -6,4 +6,80 @@
     android:layout_height="match_parent"
     tools:context=".Pregunta1">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="41dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/gentemuerta" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="126dp"
+        android:orientation="vertical"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5">
+
+        <Button
+            android:id="@+id/btnOp1"
+            android:layout_width="295dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:onClick="derrota"
+            android:text="Señales"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/btnOp2"
+            android:layout_width="295dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:onClick="correcto"
+            android:text="El sexto sentido" />
+
+        <Button
+            android:id="@+id/btnOp3"
+            android:layout_width="295dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:onClick="derrota"
+            android:text="Glass" />
+
+        <Button
+            android:id="@+id/btnOp4"
+            android:layout_width="295dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:onClick="derrota"
+            android:text="Saw" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="54dp"
+        android:text="'Veo gente muerta' ¿a qué película pertenece esta famosa frase?"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
 </android.support.constraint.ConstraintLayout>
