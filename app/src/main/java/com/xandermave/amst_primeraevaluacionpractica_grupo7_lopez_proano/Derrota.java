@@ -2,6 +2,8 @@ package com.xandermave.amst_primeraevaluacionpractica_grupo7_lopez_proano;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 public class Derrota extends AppCompatActivity {
 
@@ -9,5 +11,12 @@ public class Derrota extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_derrota);
+        Button salir = (Button) findViewById(R.id.btnSalir);
+        salir.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
     }
 }
