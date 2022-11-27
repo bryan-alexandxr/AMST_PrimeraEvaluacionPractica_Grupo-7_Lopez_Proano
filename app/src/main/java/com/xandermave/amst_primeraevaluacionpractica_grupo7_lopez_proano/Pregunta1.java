@@ -55,6 +55,15 @@ public class Pregunta1 extends AppCompatActivity {
                case 3:
                    activity = Pregunta3.class;
                    break;
+                case 4:
+                    activity = Pregunta4.class;
+                    break;
+                case 5:
+                    activity = Pregunta5.class;
+                    break;
+                case 6:
+                    activity = Pregunta6.class;
+                    break;
            }
 
             Intent intent = new Intent(getBaseContext(), activity);

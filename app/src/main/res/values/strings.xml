@@ -12,7 +12,7 @@
     <string name="pregunta5_op3">Spiderman</string>
     <string name="pregunta5_op4">Iron Man</string>
 
-    <string name="pregunta6">¿A qué pelócula pertence la frase "La vida es como una caja de bombones, nunca sabes lo que te va a tocar"?</string>
+    <string name="pregunta6">¿A qué película pertence la frase "La vida es como una caja de bombones, nunca sabes lo que te va a tocar"?</string>
     <string name="pregunta6_op1">Forest Gump</string>
     <string name="pregunta6_op2">Titanic</string>
     <string name="pregunta6_op3">Hasta el último hombre</string>
@@ -20,6 +20,6 @@
 
     <string name="Salir">Salir</string>
     <string name="Derrota">¡Oh no! Has perdido :(</string>
-    <string name="Bien">Preguntas bien respondidas</string>
+    <string name="Bien">Preguntas bien respondidas:</string>
     <string name="Volver">Volver a Jugar</string>
 </resources>

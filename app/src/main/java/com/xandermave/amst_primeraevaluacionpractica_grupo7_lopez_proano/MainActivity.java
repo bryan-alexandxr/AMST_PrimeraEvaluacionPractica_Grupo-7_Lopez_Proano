@@ -17,7 +17,6 @@ public class MainActivity extends AppCompatActivity {
     ArrayList<Integer> valores =  new ArrayList<>();
     
 
-//Prueba
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,9 +25,12 @@ public class MainActivity extends AppCompatActivity {
         valores.add(1);
         valores.add(2);
         valores.add(3);
+        valores.add(4);
+        valores.add(5);
+        valores.add(6);
 
         Random rand = new Random();
-        int n = rand.nextInt(3)+ 1; //por ahora solo habrán 3 preguntas
+        int n = rand.nextInt(6)+ 1; //por ahora habrán 6 preguntas
 
         int cont = 0; //Para saber cuantas preguntas ha contestado correctamente
 
@@ -59,6 +61,28 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(i);
                     finish();
                 }
+            else if (n ==4) {
+                Intent i = new Intent(MainActivity.this, Pregunta4.class);
+                i.putIntegerArrayListExtra("valores", valores);
+                i.putExtra("cont",cont);
+                startActivity(i);
+                finish();
+            }
+            else if (n ==5) {
+                Intent i = new Intent(MainActivity.this, Pregunta5.class);
+                i.putIntegerArrayListExtra("valores", valores);
+                i.putExtra("cont",cont);
+                startActivity(i);
+                finish();
+            }
+            else if (n ==6) {
+                Intent i = new Intent(MainActivity.this, Pregunta6.class);
+                i.putIntegerArrayListExtra("valores", valores);
+                i.putExtra("cont",cont);
+                startActivity(i);
+                finish();
+            }
+
             }
         });
 
