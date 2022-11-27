@@ -6,4 +6,80 @@
     android:layout_height="match_parent"
     tools:context=".Pregunta3">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="41dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/diehard" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="126dp"
+        android:orientation="vertical"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5">
+
+        <Button
+            android:id="@+id/btnOp1"
+            android:layout_width="295dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:onClick="derrota"
+            android:text="Jhonny Deep"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/btnOp2"
+            android:layout_width="295dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:onClick="derrota"
+            android:text="Mel Gibson" />
+
+        <Button
+            android:id="@+id/btnOp3"
+            android:layout_width="295dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:onClick="derrota"
+            android:text="Will Smith" />
+
+        <Button
+            android:id="@+id/btnOp4"
+            android:layout_width="295dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:onClick="correcto"
+            android:text="Bruce Willis" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="54dp"
+        android:text="¿Quién es el actor principal de la película 'Duro de matar (Die Hard)'"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
 </android.support.constraint.ConstraintLayout>
