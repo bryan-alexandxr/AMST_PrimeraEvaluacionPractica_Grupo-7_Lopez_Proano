@@ -20,4 +20,6 @@
 
     <string name="Salir">Salir</string>
     <string name="Derrota">¡Oh no! Has perdido :(</string>
+    <string name="Bien">Preguntas bien respondidas</string>
+    <string name="valor">#</string>
 </resources>
