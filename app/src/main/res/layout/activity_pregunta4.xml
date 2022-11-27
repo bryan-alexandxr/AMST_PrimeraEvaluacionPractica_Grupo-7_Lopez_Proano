@@ -37,7 +37,7 @@
             android:layout_width="295dp"
             android:layout_height="50dp"
             android:layout_gravity="center"
-            android:onClick="correcto"
+            android:onClick="derrota"
             android:text="@string/pregunta4_op1"
             android:textAlignment="center" />
 
@@ -54,7 +54,7 @@
             android:layout_width="295dp"
             android:layout_height="50dp"
             android:layout_gravity="center"
-            android:onClick="derrota"
+            android:onClick="correcto"
             android:text="@string/pregunta4_op3" />
 
         <Button
