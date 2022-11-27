@@ -12,11 +12,12 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
-    //Main activity es la Bienvenida
+//Main activity es la Bienvenida
     Button btnEmpezar;
     ArrayList<Integer> valores =  new ArrayList<>();
+    
 
-
+//Prueba
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

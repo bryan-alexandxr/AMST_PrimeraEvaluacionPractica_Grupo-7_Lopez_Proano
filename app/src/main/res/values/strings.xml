@@ -1,3 +1,25 @@
 <resources>
     <string name="app_name">AMST_PrimeraEvaluacionPractica_Grupo7_Lopez_Proano</string>
+    <string name="pregunta4">¿Cómo se llama el actor que interpreta este personaje bajo la dirección de Christopher Nolan?</string>
+    <string name="pregunta4_op1">Jack Nicholson</string>
+    <string name="pregunta4_op2">Cesar Romero</string>
+    <string name="pregunta4_op3">Heath Ledger</string>
+    <string name="pregunta4_op4">Jared Leto</string>
+
+    <string name="pregunta5">En la película Avengers Infinity War, ¿Quién usa el "guantelete" aparte de Thanos?</string>
+    <string name="pregunta5_op1">Capitán América</string>
+    <string name="pregunta5_op2">Thor</string>
+    <string name="pregunta5_op3">Spiderman</string>
+    <string name="pregunta5_op4">Iron Man</string>
+
+    <string name="pregunta6">¿A qué pelócula pertence la frase "La vida es como una caja de bombones, nunca sabes lo que te va a tocar"?</string>
+    <string name="pregunta6_op1">Forest Gump</string>
+    <string name="pregunta6_op2">Titanic</string>
+    <string name="pregunta6_op3">Hasta el último hombre</string>
+    <string name="pregunta6_op4">En busca de la felicidad</string>
+
+    <string name="Salir">Salir</string>
+    <string name="Derrota">¡Oh no! Has perdido :(</string>
+    <string name="Bien">Preguntas bien respondidas</string>
+    <string name="Volver">Volver a Jugar</string>
 </resources>
